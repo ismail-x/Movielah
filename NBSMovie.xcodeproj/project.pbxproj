@@ -11,6 +11,19 @@
 		EC59975925389E35009AA558 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59975825389E35009AA558 /* ContentView.swift */; };
 		EC59975B25389E38009AA558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC59975A25389E38009AA558 /* Assets.xcassets */; };
 		EC59975E25389E38009AA558 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC59975D25389E38009AA558 /* Preview Assets.xcassets */; };
+		EC59976825389E7B009AA558 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59976725389E7B009AA558 /* MovieService.swift */; };
+		EC59976C25389E93009AA558 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59976B25389E93009AA558 /* MovieStore.swift */; };
+		EC59976F25389EC8009AA558 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59976E25389EC8009AA558 /* Utils.swift */; };
+		EC59977425389F23009AA558 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59977325389F23009AA558 /* Movie.swift */; };
+		EC59977B2538A172009AA558 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59977A2538A172009AA558 /* Movie+Stub.swift */; };
+		EC5997812538A19F009AA558 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = EC59977E2538A19F009AA558 /* search_movie.json */; };
+		EC5997822538A19F009AA558 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = EC59977F2538A19F009AA558 /* movie_list.json */; };
+		EC5997832538A19F009AA558 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5997802538A19F009AA558 /* movie_info.json */; };
+		EC59978C2538A32F009AA558 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59978B2538A32E009AA558 /* ImageLoader.swift */; };
+		EC5997902538A70F009AA558 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59978F2538A70F009AA558 /* MovieBackdropCard.swift */; };
+		EC5997932538D3CB009AA558 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5997922538D3CB009AA558 /* MovieBackdropCarouselView.swift */; };
+		EC5997962538DE72009AA558 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5997952538DE72009AA558 /* MoviePosterCard.swift */; };
+		EC5997992538E091009AA558 /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5997982538E091009AA558 /* MoviePosterCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +33,19 @@
 		EC59975A25389E38009AA558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC59975D25389E38009AA558 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC59975F25389E38009AA558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC59976725389E7B009AA558 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		EC59976B25389E93009AA558 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		EC59976E25389EC8009AA558 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EC59977325389F23009AA558 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EC59977A2538A172009AA558 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		EC59977E2538A19F009AA558 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		EC59977F2538A19F009AA558 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		EC5997802538A19F009AA558 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		EC59978B2538A32E009AA558 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EC59978F2538A70F009AA558 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
+		EC5997922538D3CB009AA558 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
+		EC5997952538DE72009AA558 /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
+		EC5997982538E091009AA558 /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,12 @@
 			children = (
 				EC59975625389E35009AA558 /* NBSMovieApp.swift */,
 				EC59975825389E35009AA558 /* ContentView.swift */,
+				EC59976E25389EC8009AA558 /* Utils.swift */,
+				EC59978A2538A321009AA558 /* Bindings */,
+				EC5997852538A2D6009AA558 /* Views */,
+				EC59976625389E64009AA558 /* Services */,
+				EC59977225389F00009AA558 /* Model */,
+				EC5997792538A0FA009AA558 /* Resources */,
 				EC59975A25389E38009AA558 /* Assets.xcassets */,
 				EC59975F25389E38009AA558 /* Info.plist */,
 				EC59975C25389E38009AA558 /* Preview Content */,
@@ -67,6 +99,53 @@
 				EC59975D25389E38009AA558 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC59976625389E64009AA558 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC59976725389E7B009AA558 /* MovieService.swift */,
+				EC59976B25389E93009AA558 /* MovieStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC59977225389F00009AA558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC59977325389F23009AA558 /* Movie.swift */,
+				EC59977A2538A172009AA558 /* Movie+Stub.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC5997792538A0FA009AA558 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC5997802538A19F009AA558 /* movie_info.json */,
+				EC59977F2538A19F009AA558 /* movie_list.json */,
+				EC59977E2538A19F009AA558 /* search_movie.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC5997852538A2D6009AA558 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC59978F2538A70F009AA558 /* MovieBackdropCard.swift */,
+				EC5997922538D3CB009AA558 /* MovieBackdropCarouselView.swift */,
+				EC5997952538DE72009AA558 /* MoviePosterCard.swift */,
+				EC5997982538E091009AA558 /* MoviePosterCarouselView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC59978A2538A321009AA558 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				EC59978B2538A32E009AA558 /* ImageLoader.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5997812538A19F009AA558 /* search_movie.json in Resources */,
+				EC5997832538A19F009AA558 /* movie_info.json in Resources */,
 				EC59975E25389E38009AA558 /* Preview Assets.xcassets in Resources */,
+				EC5997822538A19F009AA558 /* movie_list.json in Resources */,
 				EC59975B25389E38009AA558 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC59976F25389EC8009AA558 /* Utils.swift in Sources */,
+				EC59976C25389E93009AA558 /* MovieStore.swift in Sources */,
+				EC59977425389F23009AA558 /* Movie.swift in Sources */,
+				EC59977B2538A172009AA558 /* Movie+Stub.swift in Sources */,
+				EC5997962538DE72009AA558 /* MoviePosterCard.swift in Sources */,
+				EC5997902538A70F009AA558 /* MovieBackdropCard.swift in Sources */,
+				EC5997992538E091009AA558 /* MoviePosterCarouselView.swift in Sources */,
+				EC59978C2538A32F009AA558 /* ImageLoader.swift in Sources */,
+				EC59976825389E7B009AA558 /* MovieService.swift in Sources */,
+				EC5997932538D3CB009AA558 /* MovieBackdropCarouselView.swift in Sources */,
 				EC59975925389E35009AA558 /* ContentView.swift in Sources */,
 				EC59975725389E35009AA558 /* NBSMovieApp.swift in Sources */,
 			);
@@ -269,7 +361,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NBSMovie/Preview Content\"";
-				DEVELOPMENT_TEAM = C8XJKQSAWS;
+				DEVELOPMENT_TEAM = P3HXWKRQQF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBSMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -291,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NBSMovie/Preview Content\"";
-				DEVELOPMENT_TEAM = C8XJKQSAWS;
+				DEVELOPMENT_TEAM = P3HXWKRQQF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBSMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
