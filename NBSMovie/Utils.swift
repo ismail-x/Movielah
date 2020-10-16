@@ -21,5 +21,4 @@ class Utils {
         dateFormatter.dateFormat = "yyyy-mm-dd"
         return dateFormatter
     }()
-    
 }

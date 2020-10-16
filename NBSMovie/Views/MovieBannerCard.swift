@@ -1,5 +1,5 @@
 //
-//  MoviePosterCard.swift
+//  MovieBanner.swift
 //  NBSMovie
 //
 //  Created by Ismail . on 16/10/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MoviePosterCard: View {
+struct MovieBannerCard: View {
     
     let movie: Movie
     @ObservedObject var imageLoader = ImageLoader()
@@ -17,28 +17,29 @@ struct MoviePosterCard: View {
             if self.imageLoader.image != nil {
                 Image(uiImage: self.imageLoader.image!)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(8)
-                    .shadow(radius: 4)
+                Rectangle()
+                    .frame(height: 80)
+                    .opacity(0.35)
+                    .blur(radius: 10)
+                
             } else {
                 Rectangle()
-                    .fill(Color.gray.opacity(0.3))
-                    .cornerRadius(8)
+                    .fill(Color.gray)
+                    .cornerRadius(0)
                     .shadow(radius: 4)
                 Text(movie.title)
                     .multilineTextAlignment(.center)
             }
         }
-        .frame(width: 204, height: 306)
+        .frame(height: 350)
         .onAppear{
             self.imageLoader.loadImage(with: self.movie.posterURL)
-            
         }
     }
 }
 
-struct MoviePosterCard_Previews: PreviewProvider {
+struct MovieBannerCard_Previews: PreviewProvider {
     static var previews: some View {
-        MoviePosterCard(movie: Movie.stubbedMovie)
+        MovieBannerCard(movie: Movie.stubbedMovie)
     }
 }

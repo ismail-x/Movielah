@@ -8,14 +8,14 @@
 import SwiftUI
 import UIKit
 
-private let _imagecache = NSCache<AnyObject, AnyObject>()
+private let _imageCache = NSCache<AnyObject, AnyObject>()
 
 class ImageLoader: ObservableObject {
     
     @Published var image: UIImage?
     @Published var isLoading = false
     
-    var imageCache = _imagecache
+    var imageCache = _imageCache
     
     func loadImage(with url: URL) {
         let urlString = url.absoluteString
@@ -32,14 +32,12 @@ class ImageLoader: ObservableObject {
                     return
                 }
                 self.imageCache.setObject(image, forKey: urlString as AnyObject)
-                DispatchQueue.main.async {
-                    [weak self] in
+                DispatchQueue.main.async { [weak self] in
                     self?.image = image
                 }
             } catch {
                 print(error.localizedDescription)
             }
         }
-        
     }
 }
