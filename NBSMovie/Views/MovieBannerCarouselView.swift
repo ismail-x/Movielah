@@ -17,9 +17,14 @@ struct MovieBannerCarouselView: View {
         VStack(alignment: .leading, spacing: 16) {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 16) {
-                    ForEach(self.movies) { movie in
-                        MovieBannerCard(movie: movie)
-                            .frame(width: 420, height: 405)
+                    ForEach(self.movies.prefix(4)) { movie in
+                        NavigationLink(
+                            destination: MovieDetailView(movieId: movie.id)){
+                            MovieBannerCard(movie: movie)
+                                .frame(width: 420, height: 405)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                          
                     }
                 }
             }

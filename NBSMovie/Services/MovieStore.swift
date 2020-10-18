@@ -34,7 +34,7 @@ class MovieStore: MovieService {
     }
     
     func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
-        guard let url = URL(string: "\(baseAPIURL)/search/movie)") else {
+        guard let url = URL(string: "\(baseAPIURL)/search/movie") else {
             completion(.failure(.invalidEndpoint))
             return
         }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3C9D7F253B087900B90D40 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C9D7E253B087900B90D40 /* SafariView.swift */; };
+		EC3C9D82253C488900B90D40 /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C9D81253C488900B90D40 /* MovieSearchView.swift */; };
+		EC3C9D85253C48E800B90D40 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C9D84253C48E800B90D40 /* SearchBarView.swift */; };
+		EC3C9D88253C4C3E00B90D40 /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C9D87253C4C3E00B90D40 /* MovieSearchState.swift */; };
 		EC59975725389E35009AA558 /* NBSMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59975625389E35009AA558 /* NBSMovieApp.swift */; };
 		EC59975925389E35009AA558 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59975825389E35009AA558 /* ContentView.swift */; };
 		EC59975B25389E38009AA558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC59975A25389E38009AA558 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3C9D7E253B087900B90D40 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		EC3C9D81253C488900B90D40 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		EC3C9D84253C48E800B90D40 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		EC3C9D87253C4C3E00B90D40 /* MovieSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
 		EC59975325389E35009AA558 /* NBSMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBSMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC59975625389E35009AA558 /* NBSMovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBSMovieApp.swift; sourceTree = "<group>"; };
 		EC59975825389E35009AA558 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				EC59979C2538E73A009AA558 /* MovieListView.swift */,
 				EC5997AC2538EAD5009AA558 /* LoadingView.swift */,
 				EC7157482539AF5000C84F0D /* MovieDetailView.swift */,
+				EC3C9D81253C488900B90D40 /* MovieSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 				EC59978B2538A32E009AA558 /* ImageLoader.swift */,
 				EC59979F2538E76E009AA558 /* MovieListState.swift */,
 				EC71574F2539AF8F00C84F0D /* MovieDetailState.swift */,
+				EC3C9D87253C4C3E00B90D40 /* MovieSearchState.swift */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -173,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				EC5997A32538E9B9009AA558 /* ActivityIndicatorView.swift */,
+				EC3C9D7E253B087900B90D40 /* SafariView.swift */,
+				EC3C9D84253C48E800B90D40 /* SearchBarView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -253,6 +265,7 @@
 				EC7157502539AF8F00C84F0D /* MovieDetailState.swift in Sources */,
 				EC59979D2538E73A009AA558 /* MovieListView.swift in Sources */,
 				EC59976C25389E93009AA558 /* MovieStore.swift in Sources */,
+				EC3C9D7F253B087900B90D40 /* SafariView.swift in Sources */,
 				EC59977425389F23009AA558 /* Movie.swift in Sources */,
 				EC5997A42538E9B9009AA558 /* ActivityIndicatorView.swift in Sources */,
 				EC5997AD2538EAD5009AA558 /* LoadingView.swift in Sources */,
@@ -262,9 +275,12 @@
 				EC5997992538E091009AA558 /* MoviePosterCarouselView.swift in Sources */,
 				EC59978C2538A32F009AA558 /* ImageLoader.swift in Sources */,
 				EC5997A02538E76E009AA558 /* MovieListState.swift in Sources */,
+				EC3C9D88253C4C3E00B90D40 /* MovieSearchState.swift in Sources */,
 				EC7157492539AF5000C84F0D /* MovieDetailView.swift in Sources */,
+				EC3C9D82253C488900B90D40 /* MovieSearchView.swift in Sources */,
 				EC71573D25398C8500C84F0D /* MovieBannerCard.swift in Sources */,
 				EC59976825389E7B009AA558 /* MovieService.swift in Sources */,
+				EC3C9D85253C48E800B90D40 /* SearchBarView.swift in Sources */,
 				EC59975925389E35009AA558 /* ContentView.swift in Sources */,
 				EC7157452539AC4F00C84F0D /* AppDelegate.swift in Sources */,
 				EC59975725389E35009AA558 /* NBSMovieApp.swift in Sources */,
