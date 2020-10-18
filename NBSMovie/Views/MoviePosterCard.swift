@@ -36,9 +36,3 @@ struct MoviePosterCard: View {
         }
     }
 }
-
-struct MoviePosterCard_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviePosterCard(movie: Movie.stubbedMovie)
-    }
-}

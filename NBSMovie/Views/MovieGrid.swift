@@ -35,9 +35,3 @@ struct MovieGrid: View {
         }
     }
 }
-
-struct MovieGrid_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieGrid(movie: Movie.stubbedMovie)
-    }
-}

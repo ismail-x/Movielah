@@ -35,8 +35,3 @@ struct MoviePosterCarouselView: View {
     }
 }
 
-struct MoviePosterCarouselView_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviePosterCarouselView(title: "Now Playing", movies: Movie.stubbedMovies)
-    }
-}

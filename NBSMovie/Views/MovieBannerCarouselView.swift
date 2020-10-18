@@ -31,9 +31,3 @@ struct MovieBannerCarouselView: View {
         }
     }
 }
-
-struct MovieBannerCarouselView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieBannerCarouselView(movies: Movie.stubbedMovies)
-    }
-}

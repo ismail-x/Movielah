@@ -11,6 +11,7 @@ struct MovieDetailView: View {
     
     let movieId: Int
     @ObservedObject private var movieDetailState = MovieDetailState()
+    @ObservedObject var favorites = Favorites()
     
     var body: some View {
         ZStack{
@@ -27,17 +28,21 @@ struct MovieDetailView: View {
         .onAppear{
             self.movieDetailState.loadMovie(id: self.movieId)
         }
+        .environmentObject(favorites)
     }
+    
 }
 
 struct MovieDetailListView: View {
     
     let movie: Movie
+    private let imageLoader = ImageLoader()
     @State private var selectedTrailer: MovieVideo?
+    @EnvironmentObject var favorites: Favorites
     
     var body: some View {
         List{
-            MovieDetailImage(imageURL: self.movie.backdropURL)
+            MovieDetailImage(imageLoader: imageLoader, imageURL: self.movie.backdropURL)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
@@ -47,9 +52,13 @@ struct MovieDetailListView: View {
                 Text(movie.durationText)
             }
             HStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "plus.square.fill")
-                })
+                Button(favorites.contains(movie) ? "Remove From Favorite 💔" : "Add To Favorite ❣️") {
+                    if self.favorites.contains(self.movie) {
+                        self.favorites.remove(self.movie)
+                    } else {
+                        self.favorites.add(self.movie)
+                    }
+                }
             }
             Text(movie.overview)
             HStack {
@@ -108,7 +117,7 @@ struct MovieDetailListView: View {
 
 struct MovieDetailImage: View {
     
-    @ObservedObject private var imageLoader = ImageLoader()
+    @ObservedObject var imageLoader: ImageLoader
     let imageURL: URL
     
     var body: some View {
@@ -125,13 +134,4 @@ struct MovieDetailImage: View {
         }
     }
     
-}
-
-
-struct MovieDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView{
-            MovieDetailView(movieId: Movie.stubbedMovie.id)
-        }
-    }
 }
