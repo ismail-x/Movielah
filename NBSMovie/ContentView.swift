@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var popularState = MovieListState()
+    
     var body: some View {
         TabView {
             MovieListView()
@@ -19,15 +21,16 @@ struct ContentView: View {
             }
             .tag(0)
             
-            MovieSearchView()
-                .tabItem {
-                    VStack {
+            MovieGridPopular()
+                .tabItem{
+                    VStack{
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
                 }
-            .tag(1)
+                .tag(1)
         }
+        
         
     }
 }
